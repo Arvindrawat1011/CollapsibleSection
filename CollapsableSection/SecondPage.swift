@@ -75,9 +75,7 @@ class SecondPage: UIViewController {
         
     }
     
-//        for i in 0...3{
-//        newImg.image = UIImage(named :smallImageArr[i])
-//        }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

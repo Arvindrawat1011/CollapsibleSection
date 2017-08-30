@@ -10,7 +10,7 @@ import UIKit
 
 extension FirstPage : UITableViewDataSource, UITableViewDelegate{
     
-   
+    
             // Returns Table Cell count
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -50,29 +50,105 @@ extension FirstPage : UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (objectArray[indexPath.section].expanded!){
             
-            return 100
+            return 150
         }
         else{
             return 0
             
         }
     }
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-       
-        return 2
-    }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return 70
     }
     
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+      
         let header = Expand()
+        var imageView = UIImageView()
+        
+        
+      
+       
+//       let DoneBut: UIButton = UIButton(frame: CGRect(x: 350, y: 10, width: 30, height: 30))
+        
+   let value =  objectArray[section].expanded
+        
+        
+   
+        
+       
+        print(value!)
+        if    false == objectArray[section].expanded!{
+           
+           
+            imageView = UIImageView.init(frame: CGRect(x: 380, y: 10, width: 30, height: 30))
+            imageView.image = UIImage(named: "right")
+         
+
+        }
+        
+        
+        else {
+            
+          
+            imageView = UIImageView.init(frame: CGRect(x: 380, y: 15, width: 30, height: 30))
+            imageView.image = UIImage(named: "Down")
+            
+        }
+        
+    //DoneBut.backgroundColor = UIColor.lightGray
+       //DoneBut.setImage(UIImage(named: "rightArrow"), for: .normal)
+       
+
+        header.addSubview(imageView)
+       
         
         header.custom(section: section, delegate: self)
+       // imageView.addTarget(self, action: #selector(action), for: .touchUpInside)
+       
         return header
     }
-   
+    
+    
+    
+    func tableCell(button: UIButton) -> UITableViewCell{
+        var cell : UIView = button
+        while !(cell is TextFieldCell) {
+            if let super_view = cell.superview {
+                cell = super_view
+            }else{}
+        }
+        guard let tableCell = cell as? TextFieldCell else {fatalError()}
+        return tableCell
+    }
+    
+
+    @objc func action(_ sender:UIButton!) {
+       
+      
+        print("Button Clicked of Index")
+    
+//       guard let tableCell = self.tableCell(button: sender) as? TextFieldCell else {return print("jkljhjlglfv")}
+////
+//      // guard let indexPath = self.firstPageTableView.indexPath(for: tableCell) else {fatalError()}
+//    let indexPath = firstPageTableView.indexPath(for: tableCell)
+//
+        
+        
+        
+    }
+    
+
+
+
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        
+      
+        view.backgroundColor = UIColor.black
+        
+    }
   
     //   Selected row or cell
     
@@ -80,7 +156,7 @@ extension FirstPage : UITableViewDataSource, UITableViewDelegate{
 
         let indexPath = tableView.indexPathForSelectedRow //optional, to get from any UIButton for example
 
-        let currentCell = tableView.cellForRow(at: indexPath!) as! TextFieldCell
+        //  _ = tableView.cellForRow(at: indexPath!) as! TextFieldCell
 
         let obj = self.storyboard?.instantiateViewController(withIdentifier: "SecondPage") as! SecondPage
         print(indexPath!)
@@ -137,4 +213,5 @@ extension FirstPage : UITableViewDataSource, UITableViewDelegate{
         return "Erase"
     }
 }
+
 

@@ -21,21 +21,25 @@ class Expand: UITableViewHeaderFooterView {
         super.init(reuseIdentifier: reuseIdentifier)
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapGesture1)))
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     func custom(section:Int, delegate : ExpandHeaderView)
     {
         self.delegate = delegate
         self.section = section
         
     }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+  
     
     @objc func tapGesture1(gestureRecognizer: UITapGestureRecognizer)  {
-        print("tapped")
-        
+       
+       
         let cell = gestureRecognizer.view as? Expand
-        print("tapped2")
+        
+      
+       
         delegate?.Toggle(header: self, section: (cell?.section)!)
     }
     
