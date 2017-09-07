@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CB7533C1F514BD10078F970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7533B1F514BD10078F970 /* AppDelegate.swift */; };
+		0C1567651F611E6C00CEB016 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1567631F611E6C00CEB016 /* TableViewCell.swift */; };
+		0C1567661F611E6C00CEB016 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1567641F611E6C00CEB016 /* TableViewCell.xib */; };
 		0CB7533E1F514BD10078F970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7533D1F514BD10078F970 /* ViewController.swift */; };
 		0CB753461F514BD10078F970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB753441F514BD10078F970 /* LaunchScreen.storyboard */; };
 		0CB753501F514D340078F970 /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7534D1F514D330078F970 /* SecondPage.swift */; };
@@ -16,11 +17,13 @@
 		0CB753551F514D5B0078F970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB753531F514D5B0078F970 /* Main.storyboard */; };
 		0CB7535B1F5151DC0078F970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB7535A1F5151DC0078F970 /* Assets.xcassets */; };
 		0CB7535D1F5188440078F970 /* Expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7535C1F5188440078F970 /* Expand.swift */; };
+		0CF4C6581F6144F900A83B1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4C6571F6144F900A83B1C /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1567631F611E6C00CEB016 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0C1567641F611E6C00CEB016 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		0CB753381F514BD10078F970 /* CollapsableSection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollapsableSection.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CB7533B1F514BD10078F970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CB7533D1F514BD10078F970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0CB753451F514BD10078F970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CB753471F514BD10078F970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		0CB753531F514D5B0078F970 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0CB7535A1F5151DC0078F970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../CustomButtonOnSliding/CustomButtonOnSliding/Assets.xcassets; sourceTree = "<group>"; };
 		0CB7535C1F5188440078F970 /* Expand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expand.swift; sourceTree = "<group>"; };
+		0CF4C6571F6144F900A83B1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../Stack/Stack/AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,9 @@
 		0CB7533A1F514BD10078F970 /* CollapsableSection */ = {
 			isa = PBXGroup;
 			children = (
-				0CB7533B1F514BD10078F970 /* AppDelegate.swift */,
+				0CF4C6571F6144F900A83B1C /* AppDelegate.swift */,
+				0C1567631F611E6C00CEB016 /* TableViewCell.swift */,
+				0C1567641F611E6C00CEB016 /* TableViewCell.xib */,
 				0CB7533D1F514BD10078F970 /* ViewController.swift */,
 				0CB7535C1F5188440078F970 /* Expand.swift */,
 				0CB7534F1F514D340078F970 /* ExtensionFile.swift */,
@@ -135,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB753461F514BD10078F970 /* LaunchScreen.storyboard in Resources */,
+				0C1567661F611E6C00CEB016 /* TableViewCell.xib in Resources */,
 				0CB7535B1F5151DC0078F970 /* Assets.xcassets in Resources */,
 				0CB753551F514D5B0078F970 /* Main.storyboard in Resources */,
 			);
@@ -149,9 +156,10 @@
 			files = (
 				0CB7533E1F514BD10078F970 /* ViewController.swift in Sources */,
 				0CB753521F514D340078F970 /* ExtensionFile.swift in Sources */,
-				0CB7533C1F514BD10078F970 /* AppDelegate.swift in Sources */,
 				0CB753501F514D340078F970 /* SecondPage.swift in Sources */,
 				0CB753511F514D340078F970 /* FirstPage.swift in Sources */,
+				0CF4C6581F6144F900A83B1C /* AppDelegate.swift in Sources */,
+				0C1567651F611E6C00CEB016 /* TableViewCell.swift in Sources */,
 				0CB7535D1F5188440078F970 /* Expand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +214,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -262,7 +270,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

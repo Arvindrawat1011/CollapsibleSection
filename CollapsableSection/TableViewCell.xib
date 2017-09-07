@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="xg5-St-UeN" userLabel="Table View Cell" customClass="TableViewCell" customModule="CollapsableSection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xg5-St-UeN" id="y24-Ug-l7N">
+                <rect key="frame" x="0.0" y="0.0" width="424" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt5-vm-egx">
+                        <rect key="frame" x="10" y="58" width="8" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="laptop1" translatesAutoresizingMaskIntoConstraints="NO" id="Err-de-NJ2">
+                        <rect key="frame" x="50" y="15" width="200" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="hdI-uR-33h"/>
+                            <constraint firstAttribute="height" constant="100" id="ltQ-9t-jee"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3e-Nr-Hh9">
+                        <rect key="frame" x="230" y="20" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-vS-cgB">
+                        <rect key="frame" x="230" y="70.5" width="42" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="N3e-Nr-Hh9" firstAttribute="leading" secondItem="Err-de-NJ2" secondAttribute="trailing" constant="-20" id="3aH-kv-Iam"/>
+                    <constraint firstItem="N3e-Nr-Hh9" firstAttribute="top" secondItem="y24-Ug-l7N" secondAttribute="top" constant="20" id="3uM-GD-uqF"/>
+                    <constraint firstItem="Dt5-vm-egx" firstAttribute="centerY" secondItem="y24-Ug-l7N" secondAttribute="centerY" id="6iR-U7-byC"/>
+                    <constraint firstItem="Dt5-vm-egx" firstAttribute="leading" secondItem="y24-Ug-l7N" secondAttribute="leading" constant="10" id="896-Bk-MaE"/>
+                    <constraint firstItem="N3e-Nr-Hh9" firstAttribute="centerX" secondItem="5c1-vS-cgB" secondAttribute="centerX" id="GN7-QP-z1U"/>
+                    <constraint firstItem="Err-de-NJ2" firstAttribute="centerY" secondItem="y24-Ug-l7N" secondAttribute="centerY" id="HUl-xy-ggt"/>
+                    <constraint firstItem="5c1-vS-cgB" firstAttribute="top" secondItem="N3e-Nr-Hh9" secondAttribute="bottom" constant="30" id="Pl0-er-6bU"/>
+                    <constraint firstAttribute="leading" secondItem="Err-de-NJ2" secondAttribute="leading" constant="-50" id="rFo-5p-PxL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+            <connections>
+                <outlet property="imgView" destination="Err-de-NJ2" id="wW0-zQ-DdS"/>
+                <outlet property="lblCounter" destination="Dt5-vm-egx" id="MeN-9x-VEs"/>
+                <outlet property="lblOne" destination="N3e-Nr-Hh9" id="7Kk-s0-9kn"/>
+                <outlet property="lblTwo" destination="5c1-vS-cgB" id="zxQ-x0-d1v"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="-101.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="laptop1" width="1773" height="1347"/>
+    </resources>
+</document>

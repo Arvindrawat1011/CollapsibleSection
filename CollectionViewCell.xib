@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="CollapsableSection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="129"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="textFieldCell" rowHeight="131" translatesAutoresizingMaskIntoConstraints="NO" id="MsR-ET-gPm" customClass="TextFieldCell" customModule="CollapsableSection" customModuleProvider="target">
+                        <rect key="frame" x="-187" y="-37" width="414" height="131"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MsR-ET-gPm" id="jyT-Df-f8c">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="130.5"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LZ-We-TmR">
+                                    <rect key="frame" x="10" y="58" width="8" height="14"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="laptop1" translatesAutoresizingMaskIntoConstraints="NO" id="DdY-y5-cpW">
+                                    <rect key="frame" x="50" y="15" width="200" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="200" id="UXW-eK-IZ7"/>
+                                        <constraint firstAttribute="height" constant="100" id="nfN-ff-le6"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKd-gU-2vl">
+                                    <rect key="frame" x="230" y="20" width="42" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mju-Ri-nqu">
+                                    <rect key="frame" x="230" y="70.5" width="42" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="JKd-gU-2vl" firstAttribute="top" secondItem="jyT-Df-f8c" secondAttribute="top" constant="20" id="8IZ-79-hwf"/>
+                                <constraint firstItem="DdY-y5-cpW" firstAttribute="centerY" secondItem="jyT-Df-f8c" secondAttribute="centerY" id="Ska-Ju-O0U"/>
+                                <constraint firstItem="9LZ-We-TmR" firstAttribute="leading" secondItem="jyT-Df-f8c" secondAttribute="leading" constant="10" id="VYG-DD-eTY"/>
+                                <constraint firstAttribute="leading" secondItem="DdY-y5-cpW" secondAttribute="leading" constant="-50" id="bXz-7e-T1u"/>
+                                <constraint firstItem="JKd-gU-2vl" firstAttribute="centerX" secondItem="Mju-Ri-nqu" secondAttribute="centerX" id="nIW-mb-F3S"/>
+                                <constraint firstItem="Mju-Ri-nqu" firstAttribute="top" secondItem="JKd-gU-2vl" secondAttribute="bottom" constant="30" id="pzO-HZ-2OJ"/>
+                                <constraint firstItem="9LZ-We-TmR" firstAttribute="centerY" secondItem="jyT-Df-f8c" secondAttribute="centerY" id="tZi-zR-ykP"/>
+                                <constraint firstItem="JKd-gU-2vl" firstAttribute="leading" secondItem="DdY-y5-cpW" secondAttribute="trailing" constant="-20" id="x9r-sD-aiw"/>
+                            </constraints>
+                        </tableViewCellContentView>
+                        <color key="backgroundColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                        <connections>
+                            <outlet property="imgView" destination="DdY-y5-cpW" id="NdP-lq-LAQ"/>
+                            <outlet property="lblCounter" destination="9LZ-We-TmR" id="CPa-e7-VbE"/>
+                            <outlet property="lblOne" destination="JKd-gU-2vl" id="gz5-Mt-YDr"/>
+                            <outlet property="lblTwo" destination="Mju-Ri-nqu" id="jno-We-U63"/>
+                        </connections>
+                    </tableViewCell>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="412" height="129"/>
+            <point key="canvasLocation" x="-86" y="91.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="laptop1" width="1773" height="1347"/>
+    </resources>
+</document>
